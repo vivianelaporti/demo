@@ -30,19 +30,8 @@ jobs:
       # uses: megamegax/slack_action@dac54751618fa4934f108b10e2dd3a3a0e4eefa3
       uses: megamegax/slack_action@0.2.2
       with:
-        # slack webhook
-          webHook: https://hooks.slack.com/services/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
-        # channel
-          channel: demodevops
-        # success|failed|canceled
-          job_status: Success
-        # message
-          message: Success
-        # user name
-        # user_name: # optional
-        # user icon
-        # user_icon: # optional
-        # actions
-        #actions: # optional
-
+        webHook: https://hooks.slack.com/services/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
+        channel: demodevops
+        job_status: Success
+        message: Success
 
