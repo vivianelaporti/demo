@@ -35,14 +35,14 @@ jobs:
 #      run: ./codeAnalysis.sh
 
     - name: SonarQube Scan
-      uses: sonarsource/sonarqube-scan-action@master
-      with:
-        projectKey: fvilarinho_demo_backend
-        organization: fvilarinho
+      uses: kitabisa/sonarqube-action@v1.1.1
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-        SONAR_HOST_URL: https://sonarcloud.io
+      with:
+        host: https://sonarcloud.io
+        projectKey: fvilarinho_demo_backend
+        organization: fvilarinho
 
     - name: SonarQube Quality Gate check
       uses: sonarsource/sonarqube-quality-gate-action@master
