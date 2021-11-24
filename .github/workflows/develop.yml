@@ -28,27 +28,11 @@ jobs:
     - name: Compile, Build and Test
       run: ./build.sh
       
-#    - name: Code Analysis - SAST (White-box testing)
-#      env:
-#        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-#        SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-#      run: ./codeAnalysis.sh
-
-    - name: SonarQube Scan
-      uses: kitabisa/sonarqube-action@v1.1.1
+    - name: Code Analysis - SAST (White-box testing)
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-      with:
-        host: https://sonarcloud.io
-        projectKey: fvilarinho_demo_backend
-        organization: fvilarinho
-
-    - name: SonarQube Quality Gate check
-      uses: sonarsource/sonarqube-quality-gate-action@master
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+      run: ./codeAnalysis.sh
        
     - name: Libraries Analysis - SAST (White-box testing)
       env:
