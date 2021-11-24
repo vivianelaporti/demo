@@ -37,7 +37,7 @@ jobs:
         # success|failed|canceled
           job_status: Success
         # message
-         message: Sucess
+         message: Success
         # user name
         #user_name: # optional
         # user icon
