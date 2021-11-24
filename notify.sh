@@ -1,3 +1,3 @@
 #!/bin/bash
 
-curl -X POST --data-urlencode "payload={\"channel\": \"#devops\", \"username\": \"Demo BOT\", \"text\": \"Pipeline executada com sucesso.\", \"icon_emoji\": \":ghost:\"}" https://hooks.slack.com/services/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
+curl -X POST --data-urlencode "payload={\"channel\": \"#devops\", \"username\": \"webhookbot\", \"text\": \"This is posted to #devops and comes from a bot named webhookbot.\", \"icon_emoji\": \":ghost:\"}" https://hooks.slack.com/services/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
