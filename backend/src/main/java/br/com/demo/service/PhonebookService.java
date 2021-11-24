@@ -24,6 +24,12 @@ public class PhonebookService{
     
     public PhonebookService(){
         super();
+
+        String var = null;
+
+        if(var.equals("Teste de bug!")){
+            System.out.println("Isto nao deveria acontecer!");
+        }
     }
     
     public PhonebookService(PhonebookPersistence persistence){
