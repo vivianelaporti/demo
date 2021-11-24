@@ -26,5 +26,7 @@ jobs:
       run: ./build.sh
       
     - name: Notification
+      env:
+        - SLACK_WEBHOOK_URL: {{ secrets.SLACK_WEBHOOK_URL }}
       run: ./notify.sh
 
