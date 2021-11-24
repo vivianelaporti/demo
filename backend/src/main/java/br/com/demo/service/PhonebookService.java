@@ -24,7 +24,9 @@ public class PhonebookService{
     
     public PhonebookService(){
         super();
+    }
 
+    public void test(){
         String var = null;
 
         if(var.equals("Teste de bug!")){
