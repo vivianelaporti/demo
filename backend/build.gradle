@@ -64,7 +64,6 @@ dependencies {
 	implementation "org.springframework.boot:spring-boot-starter-web:2.5.5"
 	implementation "org.mariadb.jdbc:mariadb-java-client:2.7.4"
 	implementation "org.glassfish.jersey.core:jersey-common:2.35"
-	implementation "jstl:jstl:1.2"
 
 	runtime "org.springframework.boot:spring-boot-starter-tomcat:2.5.5"
 

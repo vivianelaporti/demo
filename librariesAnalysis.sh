@@ -6,5 +6,4 @@ if [ -z "$SNYK_CMD" ]; then
   SNYK_CMD=./snyk
 fi
 
-$SNYK_CMD test backend
- #--severity-threshold=high
+$SNYK_CMD test backend --severity-threshold=high
