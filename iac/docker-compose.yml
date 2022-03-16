@@ -15,7 +15,7 @@ services:
   backend:
     build:
       context: ../backend
-    image: ghcr.io/fvilarinho/demo-backend:${BUILD_VERSION}
+    image: ghcr.io/vivianelaporti/demo-backend:${BUILD_VERSION}
     container_name: backend
     hostname: backend
     ports:
@@ -27,7 +27,7 @@ services:
   frontend:
     build:
       context: ../frontend
-    image: ghcr.io/fvilarinho/demo-frontend:${BUILD_VERSION}
+    image: ghcr.io/vivianelaporti/demo-frontend:${BUILD_VERSION}
     container_name: frontend
     hostname: frontend
     ports:
